@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #aaa;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.display {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+/* 让某个按钮跨越两列 */
+button.double {
+    grid-column: span 2;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    /*background-color: #2196F3;*/
+    color: #fff;
+}
+
+
+button {
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.clear, .calculate {
+    background-color: #f44336;
+}
+
+button:hover {
+    background-color: #1976D2;
+}
+
+/* 将计算结果容器设置为右对齐 */
+#result-container {
+    text-align: right;
+}
+
+/* 将加、减、乘、除按键的样式更改为橙色圆底 */
+.operator {
+    background-color: #FFA500; /* 橙色 */
+    border-radius: 100%; /* 圆形背景 */
+    width: 60px; /* 设置宽度 */
+    height: 60px; /* 设置高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+/* 其他样式保持不变 */
+
+button.double {
+    grid-column: span 2;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+
+/* 其他样式保持不变 */
+
+/* 增加样式以满足新需求 */
+#calculation-history {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+#result {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+#result {
+    color: black; /* 高亮显示计算结果的颜色 */
+	font-size: 30px;
+}
+
+/* 其他样式保持不变 */
+
+#calculation-history {
+    text-align: right;
+    margin-bottom: 5px;
+    min-height: 40px; /* 固定第一行的高度 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+#result {
+    font-weight: bold;
+    text-align: right;
+    min-height: 40px; /* 固定第二行的高度 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
